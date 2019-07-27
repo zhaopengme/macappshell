@@ -30,7 +30,7 @@ cat > "$APPNAME.app/Contents/Info.plist" <<END
   <key>CFBundleExecutable</key>
   <string>$APPNAME</string>
   <key>CFBundleIdentifier</key>
-  <string>com.example.www</string>
+  <string>com.gitnoteapp</string>
   <key>CFBundleName</key>
   <string>$APPNAME</string>
   <key>CFBundleIconFile</key>
@@ -47,6 +47,8 @@ cat > "$APPNAME.app/Contents/Info.plist" <<END
   <integer>1</integer>
   <key>NSHighResolutionCapable</key><true/>
   <key>NSSupportsAutomaticGraphicsSwitching</key><true/>
+  <key>NSAppTransportSecurity</key>
+  <dict><key>NSAllowsArbitraryLoads</key><true/></dict>
 </dict>
 </plist>
 END
